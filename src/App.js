@@ -12,7 +12,7 @@ const App = () => {
         <NewPost />
         <Routes>
           <Route path="/" element={<BlogList />} />
-          <Route path="/post/:id" element={<PostPage />} />
+          <Route path="/post/id" element={<PostPage />} />
         </Routes>
       </div>
     </Router>
