@@ -1,21 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import BlogList from "./Blog/BlogList";
+import BlogList from "./Blog/BlogDetails";
 
-import NewPost from "./Blog/newPost";
-import PostPage from "./pages/post";
+import HomePage from "./pages/home";
+import AddPost from "./Blog/newPost";
+import DetailsPage from "./Blog/BlogDetails";
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <NewPost />
+    <div>
+      <Router>
         <Routes>
-          <Route path="/" element={<BlogList />} />
-          <Route path="/post/id" element={<PostPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/add" element={<AddPost />} />
+          <Route path="/blog" element={<DetailsPage />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 };
 
