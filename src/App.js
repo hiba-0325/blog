@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import BlogList from "./Blog/BlogDetails";
-
 import HomePage from "./pages/home";
 import AddPost from "./Blog/newPost";
 import DetailsPage from "./Blog/BlogDetails";
