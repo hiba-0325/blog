@@ -40,7 +40,7 @@ function AddPost() {
         style={{ display: "block", marginLeft: "600px", padding: "100px" }}
       />
 
-      <button onlick={handleAdd}>ADD</button>
+      <button onClick={handleAdd}>ADD</button>
     </div>
   );
 }
