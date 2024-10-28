@@ -7,6 +7,7 @@ function AddPost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const dispatch = useDispatch();
+
   const navigate = useNavigate();
 
   const handleAdd = () => {
