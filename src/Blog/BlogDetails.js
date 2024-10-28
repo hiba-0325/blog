@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function DetailsPage() {
-  const blogDetails = useSelector((state) => state.blog.details);
+  const blogDetails = useSelector((state) => state.blog.blogDetails);
 
   return (
     <div>
